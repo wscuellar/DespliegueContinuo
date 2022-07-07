@@ -1,0 +1,29 @@
+﻿<div class="jumbotron jumbotron-fluid">
+    <h1 class="text-center display-4">Hola, Despliegue realizado con exito !!</h1>
+</div>
+
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <form method="post" asp-action="DownloadPersonalizado">
+                <div class="form-group">
+                    <input type="text" name="mensaje" class="form-control" />
+                </div>
+                <button type="submit" class="btn btn-primary">Descargar Personalizado</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="list-group">
+        <a asp-controller="Home"
+           asp-action="DownloadMessage"
+           class="list-group-item list-group-item-action">
+            Descargar Mensaje
+        </a>
+        <a asp-controller="Home"
+           asp-action="DownloadStream"
+           class="list-group-item list-group-item-action">
+            Descargar Stream
+        </a>
+    </div>
+</div>
